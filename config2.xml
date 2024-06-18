@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="emp" class="com.xmlBasedConstructor.Employee">
+        <constructor-arg name="emp_id" value="101"></constructor-arg>
+        <constructor-arg name="emp_name" value="Sanskruti"></constructor-arg>
+        <constructor-arg name="emp_address" value="Nashik"></constructor-arg>
+        <constructor-arg name="dept" ref="dept"></constructor-arg>
+    </bean>
+    
+    <bean id="dept" class="com.xmlBasedConstructor.Department">
+        <constructor-arg name="dept_id" value="101"></constructor-arg>
+        <constructor-arg name="dept_name" value="Development"></constructor-arg>
+    </bean>
+
+   
+    
+
+</beans>
